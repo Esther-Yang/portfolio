@@ -44,7 +44,6 @@ const Contact = (props) => {
           </a>
         </div>
       </section>
-      ;
     </Fragment>
   );
 };
