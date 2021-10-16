@@ -4,7 +4,7 @@ import classes from "./Project.module.css";
 const Project = (props) => {
   return (
     <Fragment>
-      <section id="projects" className={classes.projectsSection}>
+      <section id="project" className={classes.projectsSection}>
         <h2 className={classes.projectsHeading}>Projects</h2>
 
         <div className={classes.projectGrid}>
