@@ -7,10 +7,10 @@ const Navbar = (props) => {
       <nav id="navbar" className={classes.nav}>
         <ul className={classes.navList}>
           <li>
-            <a href="#welcome-section">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="#projects">Work</a>
+            <a href="#project">Project</a>
           </li>
           <li>
             <a href="#contact">Contact</a>
