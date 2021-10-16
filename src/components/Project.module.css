@@ -83,8 +83,8 @@
   transform: translateX(2px);
 }
 
-.btnShowAll > i {
+/* .btnShowAll > FontAwesomeIcon {
   margin-left: 10px;
   transform: translateX(0);
   transition: transform 0.3s ease-out;
-}
+} */

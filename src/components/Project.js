@@ -1,6 +1,7 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Fragment } from "react/cjs/react.production.min";
 import classes from "./Project.module.css";
-
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 const Project = (props) => {
   return (
     <Fragment>
@@ -14,11 +15,7 @@ const Project = (props) => {
             rel="noreferrer"
             className={`${classes.project} ${classes.projectTile}`}
           >
-            <img
-              className={classes.projectImage}
-              src="%PUBLIC_URL%/favicon/favicon-32x32.png"
-              alt="project 1"
-            />
+            <img className={classes.projectImage} src="#" alt="project 1" />
             <p className={classes.projectTitle}>
               <span className={classes.code}>&lt;</span>
               Project 1 Name
@@ -34,7 +31,8 @@ const Project = (props) => {
           rel="noreferrer"
           title="To Yang Qiao Yan's GitHub"
         >
-          Show all<i className="fas fa-chevron-right"></i>
+          Show all&nbsp;
+          <FontAwesomeIcon icon={faChevronRight} />
         </a>
       </section>
     </Fragment>
