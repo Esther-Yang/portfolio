@@ -23,14 +23,19 @@ const Project = (props) => {
             />
             <p className={classes.projectTitle}>Project 1 Name</p>
             <a
-              href="liveURL"
+              href="https://movie-app-53da7.web.app/quotes"
               target="_blank"
               rel="noreferrer"
               title="To Live Site"
             >
               <FontAwesomeIcon className={classes.icon} icon={faEye} />
             </a>
-            <a href="codeURL" target="_blank" rel="noreferrer" title="To Code">
+            <a
+              href="https://github.com/Esther-Yang/multi-page-spa-great-quotes"
+              target="_blank"
+              rel="noreferrer"
+              title="To Code"
+            >
               <FontAwesomeIcon className={classes.icon} icon={faCode} />
             </a>
           </div>
@@ -43,14 +48,14 @@ const Project = (props) => {
             />
             <p className={classes.projectTitle}>Project 1 Name</p>
             <a
-              href="liveURL"
+              href="https://movie-app-53da7.web.app/quotes"
               target="_blank"
               rel="noreferrer"
               title="To Live Site"
             >
               <FontAwesomeIcon className={classes.icon} icon={faEye} />
             </a>
-            <a href="codeURL" target="_blank" rel="noreferrer" title="To Code">
+            <a href="https://github.com/Esther-Yang/multi-page-spa-great-quotes" target="_blank" rel="noreferrer" title="To Code">
               <FontAwesomeIcon className={classes.icon} icon={faCode} />
             </a>
           </div>
@@ -63,14 +68,14 @@ const Project = (props) => {
             />
             <p className={classes.projectTitle}>Project 1 Name</p>
             <a
-              href="liveURL"
+              href="https://movie-app-53da7.web.app/quotes"
               target="_blank"
               rel="noreferrer"
               title="To Live Site"
             >
               <FontAwesomeIcon className={classes.icon} icon={faEye} />
             </a>
-            <a href="codeURL" target="_blank" rel="noreferrer" title="To Code">
+            <a href="https://github.com/Esther-Yang/multi-page-spa-great-quotes" target="_blank" rel="noreferrer" title="To Code">
               <FontAwesomeIcon className={classes.icon} icon={faCode} />
             </a>
           </div>
