@@ -38,7 +38,7 @@
 
 .project {
   background: var(--main-gray);
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 2px var(--main-black);
   border-radius: 2px;
 }
 
@@ -56,7 +56,7 @@
 
 .icon {
   font-size: 2.4rem;
-  text-shadow: 2px 2px 1px #1f1f1f;
+  text-shadow: 2px 2px 1px var(--main-black);
   transition: transform 0.3s ease-out;
   margin: 0rem 0rem 2rem 2rem;
 }
@@ -78,7 +78,8 @@
 }
 
 .btnShowAll:hover {
-  background: var(--main-red);
+  background: var(--main-white);
+  color: var(--main-black)
 }
 
 .btnShowAll:hover > i {
