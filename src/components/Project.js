@@ -1,7 +1,13 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Fragment } from "react/cjs/react.production.min";
 import classes from "./Project.module.css";
-import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import {
+  faChevronRight,
+  faCode,
+  faEye,
+} from "@fortawesome/free-solid-svg-icons";
+import projectGreatQuoteImage from "../image/project-great-quotes.jpeg";
+
 const Project = (props) => {
   return (
     <Fragment>
@@ -9,19 +15,65 @@ const Project = (props) => {
         <h2 className={classes.projectsHeading}>Projects</h2>
 
         <div className={classes.projectGrid}>
-          <a
-            href="%PUBLIC_URL%/favicon/favicon-32x32.png"
-            target="_blank"
-            rel="noreferrer"
-            className={`${classes.project} ${classes.projectTile}`}
-          >
-            <img className={classes.projectImage} src="#" alt="project 1" />
-            <p className={classes.projectTitle}>
-              <span className={classes.code}>&lt;</span>
-              Project 1 Name
-              <span className={classes.code}>&#47;&gt;</span>
-            </p>
-          </a>
+          <div className={classes.project}>
+            <img
+              className={classes.projectImage}
+              src={projectGreatQuoteImage}
+              alt="project 1"
+            />
+            <p className={classes.projectTitle}>Project 1 Name</p>
+            <a
+              href="liveURL"
+              target="_blank"
+              rel="noreferrer"
+              title="To Live Site"
+            >
+              <FontAwesomeIcon className={classes.icon} icon={faEye} />
+            </a>
+            <a href="codeURL" target="_blank" rel="noreferrer" title="To Code">
+              <FontAwesomeIcon className={classes.icon} icon={faCode} />
+            </a>
+          </div>
+
+          <div className={classes.project}>
+            <img
+              className={classes.projectImage}
+              src={projectGreatQuoteImage}
+              alt="project 1"
+            />
+            <p className={classes.projectTitle}>Project 1 Name</p>
+            <a
+              href="liveURL"
+              target="_blank"
+              rel="noreferrer"
+              title="To Live Site"
+            >
+              <FontAwesomeIcon className={classes.icon} icon={faEye} />
+            </a>
+            <a href="codeURL" target="_blank" rel="noreferrer" title="To Code">
+              <FontAwesomeIcon className={classes.icon} icon={faCode} />
+            </a>
+          </div>
+
+          <div className={classes.project}>
+            <img
+              className={classes.projectImage}
+              src={projectGreatQuoteImage}
+              alt="project 1"
+            />
+            <p className={classes.projectTitle}>Project 1 Name</p>
+            <a
+              href="liveURL"
+              target="_blank"
+              rel="noreferrer"
+              title="To Live Site"
+            >
+              <FontAwesomeIcon className={classes.icon} icon={faEye} />
+            </a>
+            <a href="codeURL" target="_blank" rel="noreferrer" title="To Code">
+              <FontAwesomeIcon className={classes.icon} icon={faCode} />
+            </a>
+          </div>
         </div>
 
         <a
