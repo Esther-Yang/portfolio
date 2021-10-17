@@ -5,7 +5,7 @@ const Footer = (props) => {
   return (
     <Fragment>
       <footer>
-        <p>&copy; Yang Qiao Yan 2021</p>
+        <p>&copy; 2021. Yang Qiao Yan. All Rights Reserved.</p>
       </footer>
     </Fragment>
   );
