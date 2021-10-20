@@ -26,7 +26,7 @@ npm install gh-pages --save-dev
 3. Modify `package.json` file.
    - Add `homepage` key and value.
    ```
-   "homepage": "https://esther-yang.github.io/portfolio/
+   "homepage": "https://esther-yang.github.io/portfolio/"
    ```
    - Add values to `scripts` (for project page such as this repo).
    ```
