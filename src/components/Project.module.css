@@ -6,8 +6,12 @@
 
 .projectsHeading {
   max-width: 640px;
-  margin: 0 auto 6rem auto;
+  margin: 0 auto 2rem auto;
   border-bottom: 0.2rem solid var(--main-white);
+}
+
+.projectsHeadingDescription {
+  margin: 0 auto 5rem auto;
 }
 
 @media (max-width: 28.75em) {
@@ -79,7 +83,7 @@
 
 .btnShowAll:hover {
   background: var(--main-white);
-  color: var(--main-black)
+  color: var(--main-black);
 }
 
 .btnShowAll:hover > i {

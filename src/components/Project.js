@@ -13,6 +13,11 @@ const Project = (props) => {
     <Fragment>
       <section id="project" className={classes.projectsSection}>
         <h2 className={classes.projectsHeading}>Projects</h2>
+        <p className={classes.projectsHeadingDescription}>
+          Under each project title, <br />
+          click <FontAwesomeIcon icon={faEye} /> to view the live site <br /> or
+          click <FontAwesomeIcon icon={faCode} /> to view the source code.
+        </p>
 
         <div className={classes.projectGrid}>
           <div className={classes.project}>
@@ -55,7 +60,12 @@ const Project = (props) => {
             >
               <FontAwesomeIcon className={classes.icon} icon={faEye} />
             </a>
-            <a href="https://github.com/Esther-Yang/multi-page-spa-great-quotes" target="_blank" rel="noreferrer" title="To Code">
+            <a
+              href="https://github.com/Esther-Yang/multi-page-spa-great-quotes"
+              target="_blank"
+              rel="noreferrer"
+              title="To Code"
+            >
               <FontAwesomeIcon className={classes.icon} icon={faCode} />
             </a>
           </div>
@@ -75,7 +85,12 @@ const Project = (props) => {
             >
               <FontAwesomeIcon className={classes.icon} icon={faEye} />
             </a>
-            <a href="https://github.com/Esther-Yang/multi-page-spa-great-quotes" target="_blank" rel="noreferrer" title="To Code">
+            <a
+              href="https://github.com/Esther-Yang/multi-page-spa-great-quotes"
+              target="_blank"
+              rel="noreferrer"
+              title="To Code"
+            >
               <FontAwesomeIcon className={classes.icon} icon={faCode} />
             </a>
           </div>
