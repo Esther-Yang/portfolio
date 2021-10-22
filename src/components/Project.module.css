@@ -46,7 +46,7 @@
 
 .project {
   background: var(--main-gray);
-  border:  0.2rem solid var(--main-grey);
+  border: 0.2rem solid var(--main-grey);
   box-shadow: 3px 3px var(--main-black);
   border-radius: 2px;
 }
@@ -54,7 +54,7 @@
 .projectImage {
   height: calc(100% - 6.8rem);
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .projectTitle {
