@@ -26,16 +26,16 @@ npm install gh-pages --save-dev
 3. Modify `package.json` file.
    - Add `homepage` key and value.
    ```
-   "homepage": "https://esther-yang.github.io/portfolio/
+   "homepage": "https://esther-yang.github.io/portfolio/"
    ```
-   - Add values to `scripts` (for project page such as this repo).
+   - Add values to `scripts` (for **project page** such as this repo).
    ```
    "scripts": {
         "predeploy": "npm run build",
         "deploy": "gh-pages -d build"
    }
    ```
-   - Add values to `scripts` (for user page, tweak to push deployments to master).
+   - Add values to `scripts` (for **user page**, tweak to push deployments to master).
    ```
    "scripts": {
         "predeploy": "npm run build",
@@ -48,7 +48,7 @@ npm install gh-pages --save-dev
 npm run deploy
 ```
 
-5. Configure GitHub project settings (for project page, user page do not need this step).
+5. Configure GitHub project settings (for **project page**, user page do not need this step).
 
 **Repo** > **Settings** > **Pages** > **Source** set to `gh-pages`.
 
