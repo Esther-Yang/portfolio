@@ -42,7 +42,8 @@
 
 .project {
   background: var(--main-gray);
-  box-shadow: 1px 1px 2px var(--main-black);
+  border:  0.2rem solid var(--main-grey);
+  box-shadow: 3px 3px var(--main-black);
   border-radius: 2px;
 }
 

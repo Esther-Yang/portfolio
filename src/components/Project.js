@@ -7,6 +7,8 @@ import {
   faEye,
 } from "@fortawesome/free-solid-svg-icons";
 import projectGreatQuoteImage from "../image/project-great-quotes.jpeg";
+import projectExpenseTracker from "../image/project-expense-tracker.jpeg";
+import projectToDo from "../image/project-to-do.jpeg";
 
 const Project = (props) => {
   return (
@@ -23,12 +25,12 @@ const Project = (props) => {
           <div className={classes.project}>
             <img
               className={classes.projectImage}
-              src={projectGreatQuoteImage}
-              alt="project 1"
+              src={projectExpenseTracker}
+              alt="Expense Tracker"
             />
-            <p className={classes.projectTitle}>Project 1 Name</p>
+            <p className={classes.projectTitle}>Expense Tracker</p>
             <a
-              href="https://movie-app-53da7.web.app/quotes"
+              href="https://esther-yang.github.io/expense-tracker-app/"
               target="_blank"
               rel="noreferrer"
               title="To Live Site"
@@ -36,7 +38,7 @@ const Project = (props) => {
               <FontAwesomeIcon className={classes.icon} icon={faEye} />
             </a>
             <a
-              href="https://github.com/Esther-Yang/multi-page-spa-great-quotes"
+              href="https://github.com/Esther-Yang/expense-tracker-app"
               target="_blank"
               rel="noreferrer"
               title="To Code"
@@ -49,11 +51,11 @@ const Project = (props) => {
             <img
               className={classes.projectImage}
               src={projectGreatQuoteImage}
-              alt="project 1"
+              alt="Great Quotes"
             />
-            <p className={classes.projectTitle}>Project 1 Name</p>
+            <p className={classes.projectTitle}>Great Quotes</p>
             <a
-              href="https://movie-app-53da7.web.app/quotes"
+              href="https://yqy-app.firebaseapp.com/quotes"
               target="_blank"
               rel="noreferrer"
               title="To Live Site"
@@ -61,7 +63,7 @@ const Project = (props) => {
               <FontAwesomeIcon className={classes.icon} icon={faEye} />
             </a>
             <a
-              href="https://github.com/Esther-Yang/multi-page-spa-great-quotes"
+              href="https://github.com/Esther-Yang/great-quotes"
               target="_blank"
               rel="noreferrer"
               title="To Code"
@@ -73,12 +75,12 @@ const Project = (props) => {
           <div className={classes.project}>
             <img
               className={classes.projectImage}
-              src={projectGreatQuoteImage}
-              alt="project 1"
+              src={projectToDo}
+              alt="To-do App"
             />
-            <p className={classes.projectTitle}>Project 1 Name</p>
+            <p className={classes.projectTitle}>To-do App</p>
             <a
-              href="https://movie-app-53da7.web.app/quotes"
+              href="https://esther-yang.github.io/to-do-app/"
               target="_blank"
               rel="noreferrer"
               title="To Live Site"
@@ -86,7 +88,7 @@ const Project = (props) => {
               <FontAwesomeIcon className={classes.icon} icon={faEye} />
             </a>
             <a
-              href="https://github.com/Esther-Yang/multi-page-spa-great-quotes"
+              href="https://github.com/Esther-Yang/to-do-app"
               target="_blank"
               rel="noreferrer"
               title="To Code"
