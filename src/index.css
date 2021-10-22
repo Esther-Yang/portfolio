@@ -55,6 +55,13 @@ html {
   }
 }
 
+/* 340px / 16px = 21.25em */
+@media (max-width: 21.25em) {
+  html {
+    font-size: 45%;
+  }
+}
+
 /* Base */
 body {
   font-family: "Courier New", Courier, monospace;
