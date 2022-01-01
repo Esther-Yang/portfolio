@@ -7,7 +7,7 @@ My portfolio using GitHub pages. It is a React app, so it requires some configur
 - `Node.js`
 - `npm `
 
-## Procedures
+## Procedure to deploy the site for the first time
 
 1. Create React app.
 
@@ -51,6 +51,15 @@ npm run deploy
 5. Configure GitHub project settings (for **project page**, user page do not need this step).
 
 **Repo** > **Settings** > **Pages** > **Source** set to `gh-pages`.
+
+---
+## Update to the site
+1. Commit changes to `master` branch.
+2. In the terminal,
+   ```
+   npm run deploy
+   ```
+   This might take several minutes and contribute commit in the `gh-pages` branch.
 
 ## Reference
 
