@@ -11,17 +11,17 @@ My portfolio using GitHub pages. It is a React app, so it requires some configur
 
 1. Create React app.
 
-```
-npx create-react-app portfolio
-cd portfolio
-npm start
-```
+   ```
+   npx create-react-app portfolio
+   cd portfolio
+   npm start
+   ```
 
 2. Install `gh-pages`.
 
-```
-npm install gh-pages --save-dev
-```
+   ```
+   npm install gh-pages --save-dev
+   ```
 
 3. Modify `package.json` file.
    - Add `homepage` key and value.
@@ -44,15 +44,14 @@ npm install gh-pages --save-dev
    ```
 4. Deploy the site.
 
-```
-npm run deploy
-```
+   ```
+   npm run deploy
+   ```
 
 5. Configure GitHub project settings (for **project page**, user page do not need this step).
 
 **Repo** > **Settings** > **Pages** > **Source** set to `gh-pages`.
 
----
 ## Update to the site
 1. Commit changes to `master` branch.
 2. In the terminal,
