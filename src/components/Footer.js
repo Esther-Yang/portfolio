@@ -2,10 +2,13 @@ import { Fragment } from "react/cjs/react.production.min";
 import classes from "./Footer.module.css";
 
 const Footer = (props) => {
+  let year = new Date();
+  year = year.getFullYear();
+
   return (
     <Fragment>
       <footer>
-        <p>&copy; 2021. Yang Qiao Yan. All Rights Reserved.</p>
+        <p>&copy; {year}. Yang Qiao Yan. All Rights Reserved.</p>
       </footer>
     </Fragment>
   );
