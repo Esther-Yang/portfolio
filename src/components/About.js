@@ -5,7 +5,7 @@ const About = (props) => {
   return (
     <Fragment>
       <section id="about" className={classes.about}>
-        <h1>Yang Qiao Yan</h1>
+        <h1>YANG Qiao Yan</h1>
         <p>A computer science fresh graduate looking for a full-time job.</p>
       </section>
     </Fragment>
