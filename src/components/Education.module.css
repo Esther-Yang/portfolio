@@ -1,0 +1,108 @@
+.education {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligns content to the left */
+  padding: 6rem 4rem; /* Adjusted padding for better spacing */
+  width: 100%;
+  background-color: #0d0d0d; /* Darker background for better contrast */
+  background-image: linear-gradient(#0d0d0d, #333333);
+}
+
+/* Heading styles */
+.education > h2 {
+  font-size: 4rem; /* Slightly smaller heading font size for better fit */
+  color: var(--main-white); /* Consistent white color for the heading */
+  margin-bottom: 2rem; /* Reduced margin for better spacing */
+  text-align: center; /* Center-align heading */
+  width: 100%;
+}
+
+/* Institution Name */
+.education .company {
+  font-size: 1.8rem; /* Slightly smaller font size for institution name */
+  font-weight: bold;
+  color: var(--main-white); /* Consistent white color */
+  margin-bottom: 0.5rem; /* Reduced margin for better spacing */
+  text-align: left; /* Align institution name to the left */
+}
+
+/* Role and date container */
+.education .role {
+  font-size: 1.6rem; /* Adjusted font size for role */
+  font-style: italic;
+  color: #00aaff; /* Adjusted blue shade for better readability */
+  margin-bottom: 1rem; /* Margin between role and additional text */
+  display: flex;
+  justify-content: space-between; /* Space between role and date */
+  width: 100%;
+}
+
+.education .date {
+  font-style: normal;
+  font-weight: 300;
+  color: var(--main-light-gray); /* Light gray color for date */
+}
+
+/* Additional text styling */
+.education p {
+  font-size: 1.4rem; /* Font size for additional text */
+  color: var(--main-white); /* Consistent white color for text */
+  margin-bottom: 1rem; /* Space below text */
+  line-height: 1.6; /* Improved line height for readability */
+  width: 100%; /* Ensure text takes full width */
+  text-align: left; /* Align text to the left */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .education {
+    padding: 4rem 2rem; /* Adjusted padding for smaller screens */
+  }
+
+  .education > h2 {
+    font-size: 3.5rem;
+  }
+
+  .education .company {
+    font-size: 1.6rem;
+  }
+
+  .education .role {
+    font-size: 1.4rem;
+  }
+
+  .education .date {
+    font-size: 1.2rem;
+  }
+
+  .education p {
+    font-size: 1.3rem;
+  }
+}
+
+/* For very small devices (mobile) */
+@media (max-width: 480px) {
+  .education {
+    padding: 2rem 1rem; /* Slightly smaller padding for mobiles */
+  }
+
+  .education > h2 {
+    font-size: 3rem; /* Adjusted font size for mobile */
+  }
+
+  .education .company {
+    font-size: 1.4rem;
+  }
+
+  .education .role {
+    font-size: 1.2rem;
+  }
+
+  .education .date {
+    font-size: 1.1rem;
+  }
+
+  .education p {
+    font-size: 1.2rem;
+  }
+}

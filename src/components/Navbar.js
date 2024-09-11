@@ -13,6 +13,9 @@ const Navbar = (props) => {
             <a href="#experiences">Experiences</a>
           </li>
           <li>
+            <a href="#education">Education</a>
+          </li>
+          <li>
             <a href="#project">Project</a>
           </li>
           <li>
