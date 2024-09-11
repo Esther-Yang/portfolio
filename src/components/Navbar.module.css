@@ -1,7 +1,8 @@
-/* Existing nav styles */
+/* Navbar Styles */
 .nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -9,37 +10,87 @@
   background: var(--main-blue);
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.75);
   z-index: 10;
+  padding: 0 1rem; /* Adjust padding for mobile view */
 }
 
 .navList {
   display: flex;
-  margin-right: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-@media (max-width: 28.75em) {
-  .nav {
-    justify-content: center;
-  }
-
-  .navList {
-    margin: 0 1rem;
-  }
+.navList li {
+  margin: 0;
 }
 
 .navList a {
   display: block;
-  font-size: 2.2rem;
-  padding: 2rem;
+  font-size: 1.6rem; /* Adjusted font size for mobile */
+  padding: 1.5rem;
+  color: var(--main-white);
+  text-decoration: none;
 }
 
-.navList a:hover {
+.navList a:hover,
+.navList .active a {
   background: var(--main-white);
   color: var(--main-black);
 }
 
-/* Active state for the currently viewed section */
-.active {
-  color: var(--main-white);
-  font-weight: bold;
-  border-bottom: 2px solid var(--main-white); /* Optional border effect */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.bar {
+  width: 2rem;
+  height: 0.2rem;
+  background: var(--main-white);
+  margin: 0.4rem 0;
+  transition: 0.3s;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav {
+    justify-content: space-between;
+  }
+
+  .navList {
+    display: none;
+    position: absolute;
+    top: 60px; /* Adjust according to your nav height */
+    right: 0;
+    background: var(--main-blue);
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navList.show {
+    display: flex;
+  }
+
+  .navList a {
+    font-size: 2rem; /* Adjusted font size for mobile */
+    padding: 1.5rem;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px);
+  }
 }
