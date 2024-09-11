@@ -17,6 +17,7 @@
   border-radius: 8px; /* Rounded corners for the box */
 }
 
+/* Heading styling */
 .education > h2 {
   font-size: 4rem; /* Larger font size for heading */
   color: var(--main-white);
@@ -25,49 +26,54 @@
   width: 100%;
 }
 
+/* Flex container for institution and date */
 .education .institutionWrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center; /* Align items vertically */
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 .education .institution {
   font-size: 2rem; /* Font size for institution name */
   font-weight: bold;
   color: var(--main-white);
-  margin-bottom: 0.5rem;
 }
 
 .education .date {
   font-size: 1.4rem;
   font-weight: 300;
   color: var(--main-light-gray);
+  text-align: right;
 }
 
+/* Flex container for degree and grade */
 .education .degreeAndGradeWrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center; /* Align items vertically */
   width: 100%;
 }
 
 .education .degreeAndGrade {
   font-size: 1.8rem; /* Font size for degree */
   color: #0080ff; /* Blue color for degree and grade */
-  margin-bottom: 1rem;
 }
 
 .education .grade {
   font-size: 1.8rem; /* Font size for grade */
   color: #0080ff; /* Blue color for degree and grade */
+  text-align: right;
 }
 
+/* Awards list styling */
 .education .awardsList {
   list-style-type: none; /* Remove default list styling */
   padding-left: 1.5rem; /* Small indentation for alignment */
   margin-left: 1rem; /* Additional left margin for alignment */
   font-size: 1.6rem; /* Font size for awards */
   color: var(--main-white);
-  width: 100%;
 }
 
 .education .awardsList li {
@@ -118,6 +124,7 @@
 
   .education .date {
     font-size: 1.1rem;
+    text-align: right;
   }
 
   .education .degreeAndGrade,
