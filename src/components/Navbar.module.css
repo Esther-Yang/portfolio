@@ -11,6 +11,7 @@
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.75);
   z-index: 10;
   padding: 0 1rem; /* Adjust padding for mobile view */
+  transition: background 0.3s ease;
 }
 
 .navList {
@@ -43,6 +44,7 @@
   flex-direction: column;
   cursor: pointer;
   padding: 1rem;
+  z-index: 20; /* Ensure hamburger is above other content */
 }
 
 .bar {
@@ -57,16 +59,20 @@
 @media (max-width: 768px) {
   .nav {
     justify-content: space-between;
+    padding: 0; /* Remove extra padding for mobile */
   }
 
   .navList {
     display: none;
     position: absolute;
-    top: 60px; /* Adjust according to your nav height */
-    right: 0;
+    top: 100%; /* Align dropdown directly below the navbar */
+    left: 0;
     background: var(--main-blue);
     flex-direction: column;
     width: 100%;
+    z-index: 10; /* Ensure dropdown is on top */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
   }
 
   .navList.show {
@@ -80,6 +86,7 @@
 
   .hamburger {
     display: flex;
+    position: relative; /* Ensure proper alignment */
   }
 
   .hamburger.active .bar:nth-child(1) {

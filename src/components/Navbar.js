@@ -7,6 +7,13 @@ const Navbar = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  const closeMenu = () => setIsOpen(false);
+
+  const handleLinkClick = (sectionId) => {
+    closeMenu(); // Close the menu when a link is clicked
+    setActiveSection(sectionId);
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll("section");
@@ -34,19 +41,19 @@ const Navbar = () => {
           <span className={classes.bar}></span>
         </div>
         <ul className={`${classes.navList} ${isOpen ? classes.show : ''}`}>
-          <li className={activeSection === "about" ? classes.active : ""}>
+          <li className={activeSection === "about" ? classes.active : ""} onClick={() => handleLinkClick("about")}>
             <a href="#about">About</a>
           </li>
-          <li className={activeSection === "experiences" ? classes.active : ""}>
+          <li className={activeSection === "experiences" ? classes.active : ""} onClick={() => handleLinkClick("experiences")}>
             <a href="#experiences">Experiences</a>
           </li>
-          <li className={activeSection === "education" ? classes.active : ""}>
+          <li className={activeSection === "education" ? classes.active : ""} onClick={() => handleLinkClick("education")}>
             <a href="#education">Education</a>
           </li>
-          <li className={activeSection === "project" ? classes.active : ""}>
+          <li className={activeSection === "project" ? classes.active : ""} onClick={() => handleLinkClick("project")}>
             <a href="#project">Project</a>
           </li>
-          <li className={activeSection === "contact" ? classes.active : ""}>
+          <li className={activeSection === "contact" ? classes.active : ""} onClick={() => handleLinkClick("contact")}>
             <a href="#contact">Contact</a>
           </li>
         </ul>
