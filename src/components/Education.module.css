@@ -84,7 +84,7 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .education {
-    padding: 2rem;
+    padding: 10rem 2rem 2rem 2rem;
   }
 
   .education > h2 {

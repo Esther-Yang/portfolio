@@ -64,7 +64,7 @@
 /* Adjustments for smaller screens */
 @media (max-width: 768px) {
   .experiences {
-    padding: 2.5rem;
+    padding: 10rem 2.5rem 2.5rem 2.5rem;
   }
 
   .experiences > h2 {
@@ -92,7 +92,7 @@
 /* For very small devices (mobile) */
 @media (max-width: 480px) {
   .experiences {
-    padding: 2rem; /* Slightly smaller padding for mobiles */
+    padding: 10rem 2rem 2rem 2rem; /* Slightly smaller padding for mobiles */
   }
 
   .experiences > h2 {
@@ -113,6 +113,5 @@
 
   .experiences li {
     font-size: 1.2rem;
-    text-align: justify; /* Justify text */
   }
 }
