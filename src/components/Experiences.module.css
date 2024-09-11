@@ -45,7 +45,8 @@
 
 /* List of experiences */
 .experiences ul {
-  padding-left: 2rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
   margin-bottom: 3rem; /* Increased margin between sections */
   width: 100%;
   list-style-type: disc;
@@ -57,6 +58,7 @@
   margin-bottom: 1rem;
   line-height: 1.8;
   text-align: left; /* Left-align bullet points */
+  text-align: justify; /* Justify text */
 }
 
 /* Adjustments for smaller screens */
@@ -83,6 +85,7 @@
 
   .experiences li {
     font-size: 1.4rem;
+    text-align: justify; /* Justify text */
   }
 }
 
@@ -110,5 +113,6 @@
 
   .experiences li {
     font-size: 1.2rem;
+    text-align: justify; /* Justify text */
   }
 }
