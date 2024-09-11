@@ -10,6 +10,9 @@ const Navbar = (props) => {
             <a href="#about">About</a>
           </li>
           <li>
+            <a href="#experiences">Experiences</a>
+          </li>
+          <li>
             <a href="#project">Project</a>
           </li>
           <li>
