@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding:10rem 4rem 4rem 4rem;
   width: 100%;
   height: 100vh;
   background-color: var(--main-black);
@@ -18,4 +19,5 @@
   font-weight: 200;
   font-style: italic;
   color: var(--main-blue);
+  margin-bottom: 2rem;
 }

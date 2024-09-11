@@ -10,7 +10,7 @@
 
 /* Heading styles */
 .experiences > h2 {
-  font-size: 5rem; /* Larger font size for heading */
+  font-size: 4rem; /* Larger font size for heading */
   color: var(--main-white);
   margin-bottom: 3rem;
   text-align: center; /* Center-align heading */
