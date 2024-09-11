@@ -9,7 +9,7 @@
 }
 
 /* Heading styles */
-.experiences > h1 {
+.experiences > h2 {
   font-size: 5rem; /* Larger font size for heading */
   color: var(--main-white);
   margin-bottom: 3rem;
@@ -67,7 +67,7 @@
     padding: 2.5rem;
   }
 
-  .experiences > h1 {
+  .experiences > h2 {
     font-size: 3.5rem;
   }
 
@@ -95,7 +95,7 @@
     padding: 2rem; /* Slightly smaller padding for mobiles */
   }
 
-  .experiences > h1 {
+  .experiences > h2 {
     font-size: 3rem; /* Adjusted font size for mobile */
   }
 

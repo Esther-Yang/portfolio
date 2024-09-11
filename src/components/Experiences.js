@@ -5,7 +5,7 @@ const Experiences = (props) => {
   return (
     <Fragment>
       <section id="experiences" className={classes.experiences}>
-        <h1>Experiences</h1>
+        <h2>Experiences</h2>
         <div>
             <p className={classes.company}>Intel Corporation</p>
             <p className={classes.role}>EDA (Electronic Design Automation) Tools Software Engineer <span className={classes.date}>Aug 2022 – Present</span></p>
