@@ -11,6 +11,10 @@
 .educationGroup {
   margin-bottom: 2rem;
   width: 100%;
+  background-color: #1c1c1c; /* Slightly lighter box background */
+  border: 1px solid #555555; /* Subtle border for the box */
+  padding: 2rem; /* Padding inside the box */
+  border-radius: 8px; /* Rounded corners for the box */
 }
 
 .education > h2 {
