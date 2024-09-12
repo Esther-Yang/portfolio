@@ -1,16 +1,13 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.f8b8bd9b.css",
-    "main.js": "/portfolio/static/js/main.5024bbbf.js",
-    "static/media/project-great-quotes.jpeg": "/portfolio/static/media/project-great-quotes.f15f338b0fc544ea372c.jpeg",
-    "static/media/project-expense-tracker.jpeg": "/portfolio/static/media/project-expense-tracker.c44858fb765fabb8cb7f.jpeg",
-    "static/media/project-to-do.jpeg": "/portfolio/static/media/project-to-do.bbf5777df1f02f041a1b.jpeg",
+    "main.css": "/portfolio/static/css/main.a054be97.css",
+    "main.js": "/portfolio/static/js/main.74764504.js",
     "index.html": "/portfolio/index.html",
-    "main.f8b8bd9b.css.map": "/portfolio/static/css/main.f8b8bd9b.css.map",
-    "main.5024bbbf.js.map": "/portfolio/static/js/main.5024bbbf.js.map"
+    "main.a054be97.css.map": "/portfolio/static/css/main.a054be97.css.map",
+    "main.74764504.js.map": "/portfolio/static/js/main.74764504.js.map"
   },
   "entrypoints": [
-    "static/css/main.f8b8bd9b.css",
-    "static/js/main.5024bbbf.js"
+    "static/css/main.a054be97.css",
+    "static/js/main.74764504.js"
   ]
 }
