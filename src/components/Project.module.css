@@ -1,3 +1,4 @@
+/* Scoped to .project */
 .project {
   display: flex;
   flex-direction: column;
@@ -6,6 +7,13 @@
   width: 100%;
   background-color: #0d0d0d; /* Dark background for contrast */
   background-image: linear-gradient(#0d0d0d, #333333);
+}
+
+.project h2 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  width: 100%;
 }
 
 /* Each project group styling */
@@ -18,62 +26,66 @@
   border-radius: 8px;
 }
 
-/* Heading styling for the section */
-.project > h2 {
-  font-size: 4rem;
-  color: var(--main-white);
-  margin-bottom: 2rem;
-  text-align: center;
-  width: 100%;
-}
-
-/* Project title */
+/* Project title styling */
 .project .projectGroup h3 {
   font-size: 2rem;
   font-weight: bold;
   color: #0080ff; /* Blue color for project title */
   margin-bottom: 1rem;
-  text-align: center; /* Center the project title */
+  text-align: center;
 }
 
-/* Project details, description, tech stack, and key features */
-.project .projectGroup p strong {
-  display: inline-block;
-  width: 180px;
-  font-size: 1.8rem;
-  color: var(--main-light-gray);
+/* Project details styling */
+.project .projectGroup .descriptionWrapper,
+.project .projectGroup .techWrapper,
+.project .projectGroup .featuresWrapper {
+  margin: 2.5rem 0; /* Increased margin for more space */
 }
 
-.project .projectGroup .indent-description {
-  margin-left: 2rem;
+.project .projectGroup .descriptionWrapper {
   font-size: 1.6rem;
   color: var(--main-white);
-  text-align: justify; /* Justify the description text */
+  padding: 0 2rem; /* Consistent padding */
+  text-align: justify; /* Justify text alignment */
 }
 
-.project .projectGroup .indent-tech {
-  display: inline; /* Inline technologies used */
+.project .projectGroup .techWrapper {
   font-size: 1.6rem;
   color: var(--main-white);
+  padding: 0 2rem; /* Consistent padding */
 }
 
-.project .projectGroup .features {
+.project .projectGroup .featuresWrapper {
+  font-size: 1.6rem;
+  color: var(--main-white);
+  padding: 0 2rem; /* Consistent padding */
+  text-align: center; /* Center text */
+}
+
+.project .projectGroup .featuresList {
   list-style-type: disc;
-  margin-left: 3rem; /* Indent bullet points */
-  font-size: 1.6rem;
-  color: var(--main-white);
-  text-align: left; /* Align bullet points to the left */
+  margin: 0; /* Remove margin */
+  padding-left: 2rem; /* Space between bullets and text */
+  text-align: left; /* Align list to the left */
 }
 
-/* Key Features heading styling */
-.project .projectGroup p strong + .features {
-  text-align: center; /* Center the Key Features heading */
+.project .projectGroup .featuresList li {
+  text-align: justify; /* Justify text within the <li> */
 }
 
-/* Buttons for GitHub and live app */
-.project .button {
+.project .projectGroup .featuresList li::first-line {
+  text-align: justify; /* Justify first line if multi-line */
+}
+
+/* Buttons styling */
+.project .projectGroup .buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* Space between buttons */
+}
+
+.project .projectGroup .button {
   display: inline-block;
-  margin-top: 1rem;
   padding: 0.75rem 1.5rem;
   background-color: #0080ff;
   color: white;
@@ -83,14 +95,15 @@
   font-size: 1.6rem;
   font-weight: bold;
   transition: background-color 0.3s ease;
+  margin: 0; /* Ensure no margin to avoid overlapping */
 }
 
-.project .button:hover {
+.project .projectGroup .button:hover {
   background-color: #0056b3;
 }
 
-/* Confidentiality note */
-.project .confidential {
+/* Confidentiality note styling */
+.project .projectGroup .confidential {
   font-size: 1.4rem;
   color: #ff6347;
   font-style: italic;
@@ -121,10 +134,10 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .project {
-    padding: 10rem 2rem 2rem 2rem;
+    padding: 5rem 2rem 2rem 2rem;
   }
 
-  .project > h2 {
+  .project h2 {
     font-size: 3rem;
   }
 
@@ -132,18 +145,20 @@
     font-size: 1.8rem;
   }
 
-  .project .projectGroup p strong {
-    width: 150px;
-    font-size: 1.6rem;
+  .project .projectGroup .descriptionWrapper,
+  .project .projectGroup .techWrapper,
+  .project .projectGroup .featuresWrapper {
+    font-size: 1.4rem;
+    padding: 0 1rem; /* Adjust padding for smaller screens */
   }
 
-  .project .projectGroup .indent-description,
-  .project .projectGroup .features {
+  .project .projectGroup .featuresList {
     font-size: 1.4rem;
   }
 
-  .project .button {
+  .project .projectGroup .button {
     font-size: 1.4rem;
+    padding: 0.5rem 1rem;
   }
 
   .project .seeAllButton {
@@ -153,10 +168,10 @@
 
 @media (max-width: 480px) {
   .project {
-    padding: 1.5rem;
+    padding: 3rem 1rem 1rem 1rem;
   }
 
-  .project > h2 {
+  .project h2 {
     font-size: 2.5rem;
   }
 
@@ -164,18 +179,20 @@
     font-size: 1.6rem;
   }
 
-  .project .projectGroup p strong {
-    width: 130px;
-    font-size: 1.4rem;
+  .project .projectGroup .descriptionWrapper,
+  .project .projectGroup .techWrapper,
+  .project .projectGroup .featuresWrapper {
+    font-size: 1.2rem;
+    padding: 0 0.5rem; /* Adjust padding for very small screens */
   }
 
-  .project .projectGroup .indent-description,
-  .project .projectGroup .features {
+  .project .projectGroup .featuresList {
     font-size: 1.2rem;
   }
 
-  .project .button {
+  .project .projectGroup .button {
     font-size: 1.2rem;
+    padding: 0.5rem 0.75rem;
   }
 
   .project .seeAllButton {
