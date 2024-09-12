@@ -1,102 +1,184 @@
-.projectsSection {
-  text-align: center;
-  padding: 10rem 2rem;
-  background: var(--main-blue);
-}
-
-.projectsHeading {
-  max-width: 640px;
-  margin: 0 auto 2rem auto;
-  border-bottom: 0.2rem solid var(--main-white);
-}
-
-.projectsHeadingDescription {
-  margin: 0 auto 5rem auto;
-}
-
-/* 460px / 16px = 28.75em */
-@media (max-width: 28.75em) {
-  .projectsHeading {
-    font-size: 4rem;
-  }
-}
-
-.projectGrid {
-  display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); */
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 3rem;
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  margin-bottom: 6rem;
-}
-
-/* 768px / 16px =48em */
-/* 490px / 16px = 30.625em */
-@media (max-width: 40em) {
-  .projectsSection {
-    padding: 6rem 3rem;
-  }
-
-  .projectGrid {
-    grid-template-columns: 1fr;
-  }
-}
-
 .project {
-  background: var(--main-gray);
-  border: 0.2rem solid var(--main-grey);
-  box-shadow: 3px 3px var(--main-black);
-  border-radius: 2px;
-}
-
-.projectImage {
-  height: calc(100% - 6.8rem);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10rem 4rem 4rem 4rem;
   width: 100%;
-  object-fit: contain;
+  background-color: #0d0d0d; /* Dark background for contrast */
+  background-image: linear-gradient(#0d0d0d, #333333);
 }
 
-.projectTitle {
+/* Each project group styling */
+.project .projectGroup {
+  margin-bottom: 2rem;
+  width: 100%;
+  background-color: #1c1c1c; /* Slightly lighter box background */
+  border: 1px solid #555555; /* Subtle border for the box */
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+/* Heading styling for the section */
+.project > h2 {
+  font-size: 4rem;
+  color: var(--main-white);
+  margin-bottom: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+/* Project title */
+.project .projectGroup h3 {
   font-size: 2rem;
-  /* padding: 2rem 0.5rem; */
-  padding: 0.5rem 0.5rem;
+  font-weight: bold;
+  color: #0080ff; /* Blue color for project title */
+  margin-bottom: 1rem;
+  text-align: center; /* Center the project title */
 }
 
-.icon {
-  font-size: 2.4rem;
-  text-shadow: 2px 2px 1px var(--main-black);
-  transition: transform 0.3s ease-out;
-  margin: 0rem 0rem 2rem 2rem;
+/* Project details, description, tech stack, and key features */
+.project .projectGroup p strong {
+  display: inline-block;
+  width: 180px;
+  font-size: 1.8rem;
+  color: var(--main-light-gray);
 }
 
-.icon:hover {
-  transform: translateY(8px);
+.project .projectGroup .indent-description {
+  margin-left: 2rem;
+  font-size: 1.6rem;
+  color: var(--main-white);
+  text-align: justify; /* Justify the description text */
 }
 
-.btn {
+.project .projectGroup .indent-tech {
+  display: inline; /* Inline technologies used */
+  font-size: 1.6rem;
+  color: var(--main-white);
+}
+
+.project .projectGroup .features {
+  list-style-type: disc;
+  margin-left: 3rem; /* Indent bullet points */
+  font-size: 1.6rem;
+  color: var(--main-white);
+  text-align: left; /* Align bullet points to the left */
+}
+
+/* Key Features heading styling */
+.project .projectGroup p strong + .features {
+  text-align: center; /* Center the Key Features heading */
+}
+
+/* Buttons for GitHub and live app */
+.project .button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #0080ff;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.project .button:hover {
+  background-color: #0056b3;
+}
+
+/* Confidentiality note */
+.project .confidential {
+  font-size: 1.4rem;
+  color: #ff6347;
+  font-style: italic;
+}
+
+/* See all button at the bottom of the project section */
+.project .seeAllContainer {
+  text-align: center;
+  width: 100%;
+}
+
+.project .seeAllButton {
   display: inline-block;
   padding: 1rem 2rem;
-  border-radius: 2px;
+  background-color: #ff6347;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
-.btnShowAll {
-  font-size: 2rem;
-  background: var(--main-gray);
-  transition: background 0.3s ease-out;
+.project .seeAllButton:hover {
+  background-color: #ff4500;
 }
 
-.btnShowAll:hover {
-  background: var(--main-white);
-  color: var(--main-black);
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .project {
+    padding: 10rem 2rem 2rem 2rem;
+  }
+
+  .project > h2 {
+    font-size: 3rem;
+  }
+
+  .project .projectGroup h3 {
+    font-size: 1.8rem;
+  }
+
+  .project .projectGroup p strong {
+    width: 150px;
+    font-size: 1.6rem;
+  }
+
+  .project .projectGroup .indent-description,
+  .project .projectGroup .features {
+    font-size: 1.4rem;
+  }
+
+  .project .button {
+    font-size: 1.4rem;
+  }
+
+  .project .seeAllButton {
+    font-size: 1.4rem;
+  }
 }
 
-.btnShowAll:hover > i {
-  transform: translateX(2px);
-}
+@media (max-width: 480px) {
+  .project {
+    padding: 1.5rem;
+  }
 
-/* .btnShowAll > FontAwesomeIcon {
-  margin-left: 10px;
-  transform: translateX(0);
-  transition: transform 0.3s ease-out;
-} */
+  .project > h2 {
+    font-size: 2.5rem;
+  }
+
+  .project .projectGroup h3 {
+    font-size: 1.6rem;
+  }
+
+  .project .projectGroup p strong {
+    width: 130px;
+    font-size: 1.4rem;
+  }
+
+  .project .projectGroup .indent-description,
+  .project .projectGroup .features {
+    font-size: 1.2rem;
+  }
+
+  .project .button {
+    font-size: 1.2rem;
+  }
+
+  .project .seeAllButton {
+    font-size: 1.2rem;
+  }
+}
