@@ -1,11 +1,14 @@
 .footer {
   font-weight: 300;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center; /* Center the footer content */
   align-items: center;
   padding: 2rem;
   background: var(--main-gray);
   border-top: 4px solid var(--main-blue);
+  width: 100%;
+  position: relative; /* Ensure it stays in its intended position */
+  bottom: 0; /* Stick to the bottom if needed */
 }
 
 @media (max-width: 768px) {
