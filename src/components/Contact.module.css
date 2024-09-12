@@ -5,23 +5,19 @@
   align-items: center;
   text-align: center;
   width: 100%;
-  height: 80vh;
+  min-height: 100vh; /* Ensures the section fills at least the viewport height */
   padding: 0 2rem;
   background: var(--main-gray);
 }
 
 .contactSectionHeader > h2 {
   font-size: 6rem;
-}
-
-@media (max-width: 28.75em) {
-  .contactSectionHeader > h2 {
-    font-size: 4rem;
-  }
+  margin: 0;
 }
 
 .contactSectionHeader > p {
   font-style: italic;
+  margin: 1rem 0 0 0;
 }
 
 .contactLinks {
@@ -31,6 +27,7 @@
   max-width: 980px;
   margin-top: 4rem;
   flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .contactDetails {
@@ -41,4 +38,25 @@
 
 .contactDetails:hover {
   transform: translateY(8px);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .contactSectionHeader > h2 {
+    font-size: 4rem;
+  }
+
+  .contactDetails {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactSectionHeader > h2 {
+    font-size: 3rem;
+  }
+
+  .contactDetails {
+    font-size: 1.8rem;
+  }
 }

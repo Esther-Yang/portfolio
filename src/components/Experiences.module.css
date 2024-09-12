@@ -1,0 +1,117 @@
+.experiences {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligns content to the left */
+  padding:10rem 4rem 4rem 4rem;
+  width: 100%;
+  background-color: #0d0d0d; /* Darker background for better contrast */
+  background-image: linear-gradient(#0d0d0d, #333333);
+}
+
+/* Heading styles */
+.experiences > h2 {
+  font-size: 4rem; /* Larger font size for heading */
+  color: var(--main-white);
+  margin-bottom: 3rem;
+  text-align: center; /* Center-align heading */
+  width: 100%;
+}
+
+/* Company Name */
+.experiences .company {
+  font-size: 2rem; /* Larger font size for company name */
+  font-weight: bold;
+  color: var(--main-white);
+  margin-bottom: 1rem;
+  text-align: left; /* Align company name to the left */
+}
+
+/* Role and date container */
+.experiences .role {
+  font-size: 1.8rem; /* Increased font size for role */
+  font-style: italic;
+  color: #0080ff; /* More readable shade of blue */
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.experiences .date {
+  font-style: normal;
+  font-weight: 300;
+  color: var(--main-light-gray);
+}
+
+/* List of experiences */
+.experiences ul {
+  padding-left: 6rem;
+  padding-right: 6rem;
+  margin-bottom: 3rem; /* Increased margin between sections */
+  width: 100%;
+  list-style-type: disc;
+}
+
+.experiences li {
+  font-size: 1.6rem; /* Increased font size for bullet points */
+  color: var(--main-white);
+  margin-bottom: 1rem;
+  line-height: 1.8;
+  text-align: left; /* Left-align bullet points */
+  text-align: justify; /* Justify text */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .experiences {
+    padding: 10rem 2.5rem 2.5rem 2.5rem;
+  }
+
+  .experiences > h2 {
+    font-size: 3.5rem;
+  }
+
+  .experiences .company {
+    font-size: 1.8rem;
+  }
+
+  .experiences .role {
+    font-size: 1.6rem;
+  }
+
+  .experiences .date {
+    font-size: 1.2rem;
+  }
+
+  .experiences li {
+    font-size: 1.4rem;
+    text-align: justify; /* Justify text */
+  }
+}
+
+/* For very small devices (mobile) */
+@media (max-width: 480px) {
+  .experiences {
+    padding: 10rem 2rem 2rem 2rem; /* Slightly smaller padding for mobiles */
+  }
+
+  .experiences > h2 {
+    font-size: 3rem; /* Adjusted font size for mobile */
+  }
+
+  .experiences .company {
+    font-size: 1.5rem;
+  }
+
+  .experiences .role {
+    font-size: 1.4rem;
+  }
+
+  .experiences .date {
+    font-size: 1.1rem;
+  }
+
+  .experiences li {
+    font-size: 1.2rem;
+  }
+}
