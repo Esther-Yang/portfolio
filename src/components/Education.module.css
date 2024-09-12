@@ -111,7 +111,7 @@
 
 @media (max-width: 480px) {
   .education {
-    padding: 1.5rem;
+    padding: 10rem 1.5rem 1.5rem 1.5rem;
   }
 
   .education > h2 {
